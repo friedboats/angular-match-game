@@ -1,0 +1,9 @@
+<div *ngFor="let tile of tiles; let i = index">
+  <app-tile 
+    [id]="i"
+    [title]="tile.title"
+    [frontImg]="tile.frontImg"
+    [backImg]="tile.backImg"></app-tile>
+</div>
+
+<router-outlet></router-outlet>
